@@ -1,0 +1,7 @@
+/* estilização da nossa pagina app */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+}
