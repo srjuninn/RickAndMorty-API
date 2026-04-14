@@ -1,16 +1,68 @@
-# React + Vite
+# Rick and Morty API Consumption
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação React criada com Vite para consumir a API oficial do Rick and Morty.
 
-Currently, two official plugins are available:
+## Sobre
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto busca personagens da API do Rick and Morty e exibe cards responsivos com informações como nome, espécie, planeta e status.
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- styled-components
+- Axios
 
-## Expanding the ESLint configuration
+## Recursos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Consumo da API do Rick and Morty
+- Listagem de personagens
+- Cards com informações principais
+- Interface estilizada com styled-components
+
+## Instalação
+
+```bash
+npm install
+```
+
+## Executando localmente
+
+```bash
+npm run dev
+```
+
+Em seguida, acesse `http://localhost:5173` no navegador.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Scripts
+
+- `npm run dev` - inicia o servidor de desenvolvimento
+- `npm run build` - gera a build de produção
+- `npm run preview` - visualiza a build de produção localmente
+- `npm run lint` - executa o ESLint
+
+## Estrutura do projeto
+
+- `src/` - código-fonte da aplicação
+- `src/components/` - componentes React e estilos
+- `src/assets/` - ícones e imagens
+- `src/App.jsx` - componente principal
+- `src/main.jsx` - entrada do Vite
+
+## Observações
+
+Este projeto foi desenvolvido para demonstrar consumo de API e uso de styled-components em um app React com Vite.
+
+## Agradecimentos
+
+Agradeço aos professores [MatheusAlvarez](https://github.com/MatheusAlvarez) e [lucascorreaa](https://github.com/lucascorreaa) por ensinarem front-end com React, Vite e styled-components.
+
+## Licença
+
+Projeto aberto para uso e estudo.
