@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledCharacterSection = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -15,5 +16,12 @@ export const StyledCharacterSection = styled.section`
         span{
             color: var(--color-primary);
         }
+    }
+    .cardsWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
     }
 `
