@@ -1,15 +1,36 @@
-import axios from "axios";
+import { StyledCard } from "./CardStyle"
+import SpeciesIcon from "../assets/SpeciesIcon"
+import AliveIcon from "../assets/AliveIcon"
+import PlanetIcon from "../assets/PlanetIcon"
+export const Card = ({img, name, specie, status, location}) => {
 
-export const Card = () => {
-    // consumindo a api do rick and morty via axios
-    axios.get('https://rickandmortyapi.com/api/character')
-        .then(res => console.log(res))
-        .catch(err => console.log(err))
 
+    // consumindo a api do rick and morty via axios com useEffect
+
+    
 
     return(
-        <div className="card">
+        
+        <StyledCard>
+            <img src={img} alt={name} />
+            <h3>{name}</h3>
+            <div className="charactersDescription">
+                <ul>
+                    <li>
+                        <SpeciesIcon/>
+                        {specie}
+                    </li>
+                    <li>
+                        <AliveIcon/>
+                        {status}
+                    </li>
+                    <li>
+                        <PlanetIcon/>
+                        {location}
+                    </li>
+                </ul>
+            </div>
 
-        </div>
+        </StyledCard>
     )
 }
