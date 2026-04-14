@@ -15,6 +15,7 @@ export const StyledCard = styled.div`
         font-size: 22px;
         font-weight: bold;
         color: var(--neutral-white);
+        text-align: center;
     }
     background-color: var(--color-g-black);
     box-shadow: 0px 4px 12px rgba(0, 0, 255, 0.2);
